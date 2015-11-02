@@ -1,18 +1,16 @@
 <apex:page showheader="true">
 	<!-- include script -->
-	<apex:includeScript value="{!URLFOR($Resource.AngularJs, 'angular.min.js')}" />
-	<apex:includeScript value="{!URLFOR($Resource.JQuery, 'jquery-1.11.3.min.js')}" />
-	<apex:includeScript value="{!URLFOR($Resource.bootstrap, '/js/bootstrap.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.AngularJs)}" />
+	<apex:includeScript value="{!URLFOR($Resource.JQuery)}" />
 	<!-- include css -->
 	<apex:stylesheet value="{!URLFOR($Resource.SLDS110, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-	<apex:stylesheet value="{!URLFOR($Resource.bootstrap, '/css/bootstrap-theme.min.css')}" />
 	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
 	<head>
 		<title>AngularTest用ページ</title>
 	</head>
 		<body>
 			<div class="slds">
-			
+				<apex:outputText value="Welcome Page!" styleClass="slds-text slds-text-heading--small" />
 			
 			
 			
